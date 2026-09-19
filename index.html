@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Mummy! 🎂</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎂</text></svg>">
+
+    <!-- Link preview -->
+    <meta property="og:title" content="Happy Birthday Mummy! 🎂">
+    <meta property="og:description" content="made with love 💛">
+    <meta property="og:type" content="website">
+
+    <!-- Handwritten / marker typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Caveat:wght@400;600;700&family=Permanent+Marker&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ===== floating paper scraps, confetti & balloons ===== -->
+    <canvas id="scrap-canvas" aria-hidden="true"></canvas>
+
+    <!-- ===== music sticker ===== -->
+    <button id="music-toggle" class="music-sticker" aria-pressed="false" aria-label="Play birthday music">
+        <span class="music-note" aria-hidden="true">♪</span>
+        <span class="music-label">play</span>
+    </button>
+
+    <main>
+
+        <section class="hero">
+            <div class="torn-wrap hero-card-wrap">
+                <span class="tape tape-hero-l" aria-hidden="true"></span>
+                <span class="tape tape-hero-r" aria-hidden="true"></span>
+
+                <div class="paper paper-cream torn-a hero-card reveal">
+                    <h1 class="hero-title">Happy<br>Birthday</h1>
+
+                    <p class="hero-name">Mummy!</p>
+
+                    <p class="hero-date">✂ September 21st ✂</p>
+
+                    <p class="hero-note">
+                        torn from paper, taped together<br>and made with love 💛
+                    </p>
+                </div>
+            </div>
+
+            <a class="scroll-hint" href="#gallery">scroll down ↓</a>
+        </section>
+        <div class="marquee" aria-hidden="true">
+            <div class="marquee-track">
+                <span class="marquee-item">Thank you for always supporting me ★ Your cooking is the absolute best ★ The most amazing mom ever ★ Thank you for all the hard work ★&nbsp;</span>
+                <span class="marquee-item">Thank you for always supporting me ★ Your cooking is the absolute best ★ The most amazing mom ever ★ Thank you for all the sacrifices ★ Best hugs in the world ★&nbsp;</span>
+            </div>
+        </div>
+        <!--
+        <div class="marquee" aria-hidden="true">
+            <div class="marquee-track">
+                <span class="marquee-item">Happy Birthday Mummy ★ Happy Birthday Mummy ★ Happy Birthday Mummy ★ Happy Birthday Mummy ★&nbsp;</span>
+                <span class="marquee-item">Happy Birthday Mummy ★ Happy Birthday Mummy ★ Happy Birthday Mummy ★ Happy Birthday Mummy ★&nbsp;</span>
+            </div>
+        </div>
+        -->
+
+        <section id="gallery" class="gallery">
+            <div class="torn-wrap section-head-wrap">
+                <div class="paper paper-kraft torn-b section-head reveal">
+                    <h2>Polaroids</h2>
+                    <p>tape your favourite photos in the frames below</p>
+                </div>
+            </div>
+
+            <div class="polaroid-grid">
+                <figure class="polaroid reveal">
+                    <span class="tape tape-corner" aria-hidden="true"></span>
+                    <div class="polaroid-photo">
+                        <img src="photos/img1.jpg" alt="A favourite photo of Mummy">
+                        <span class="photo-placeholder" aria-hidden="true">photo&nbsp;1</span>
+                    </div>
+                    <figcaption>us, always</figcaption>
+                </figure>
+
+                <figure class="polaroid reveal">
+                    <span class="tape tape-corner" aria-hidden="true"></span>
+                    <div class="polaroid-photo">
+                        <img src="photos/img3.jpg" alt="A favourite photo of Mummy">
+                        <span class="photo-placeholder" aria-hidden="true">photo&nbsp;2</span>
+                    </div>
+                    <figcaption>that summer</figcaption>
+                </figure>
+
+                <figure class="polaroid reveal">
+                    <span class="tape tape-corner" aria-hidden="true"></span>
+                    <div class="polaroid-photo">
+                        <img src="photos/img2.png" alt="A favourite photo of Mummy">
+                        <span class="photo-placeholder" aria-hidden="true">photo&nbsp;3</span>
+                    </div>
+                    <figcaption>your smile 💛</figcaption>
+                </figure>
+
+                <figure class="polaroid reveal">
+                    <span class="tape tape-corner" aria-hidden="true"></span>
+                    <div class="polaroid-photo">
+                        <img src="photos/photo-4.jpg" alt="A favourite photo of Mummy">
+                        <span class="photo-placeholder" aria-hidden="true">photo&nbsp;4</span>
+                    </div>
+                    <figcaption>family day</figcaption>
+                </figure>
+
+                <figure class="polaroid reveal">
+                    <span class="tape tape-corner" aria-hidden="true"></span>
+                    <div class="polaroid-photo">
+                        <img src="photos/photo-5.jpg" alt="A favourite photo of Mummy">
+                        <span class="photo-placeholder" aria-hidden="true">photo&nbsp;5</span>
+                    </div>
+                    <figcaption>so many laughs</figcaption>
+                </figure>
+
+                <figure class="polaroid reveal">
+                    <span class="tape tape-corner" aria-hidden="true"></span>
+                    <div class="polaroid-photo">
+                        <img src="photos/img6.jpg" alt="A favourite photo of Mummy">
+                        <span class="photo-placeholder" aria-hidden="true">photo&nbsp;6</span>
+                    </div>
+                    <figcaption>you &amp; me</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- ==========================================================
+             PAPER SCRAPS — short wishes, no long letter
+        =========================================================== -->
+        <section class="notes">
+            <div class="torn-wrap scrap-wrap scrap-wrap-1">
+                <div class="paper paper-terracotta torn-scrap scrap reveal">
+                    <p class="scrap-big">Happy Birthday,<br>Mummy!</p>
+                </div>
+            </div>
+
+            <div class="torn-wrap scrap-wrap scrap-wrap-2">
+                <div class="paper paper-sage torn-scrap scrap reveal">
+                    <p class="scrap-line">you're the best,<br>and I love you lots 💛</p>
+                </div>
+            </div>
+
+            <div class="torn-wrap scrap-wrap scrap-wrap-3">
+                <div class="paper paper-peach torn-scrap scrap reveal">
+                    <p class="scrap-line">have the happiest day <br>filled with cake &amp; smiles</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ==========================================================
+         FOOTER — a small taped paper strip
+    =========================================================== -->
+    <footer class="footer">
+        <div class="torn-wrap">
+            <div class="paper paper-kraft torn-b footer-card">
+                <p class="footer-message">made with ♥</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="lightbox" class="lightbox" aria-hidden="true">
+        <div class="lightbox-content">
+            <button id="lightbox-close" aria-label="Close image">×</button>
+            <img id="lightbox-img" src="" alt="Zoomed in photo">
+            <p id="lightbox-caption"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
